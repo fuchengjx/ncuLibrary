@@ -1,0 +1,53 @@
+/* pages/user/user.wxss */
+.body{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ededed
+}
+.header{
+  height: 250rpx;
+  background: #454dff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center ;
+}
+.avatar{
+  position: relative;
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+.content{
+  position: relative;
+  top:-100rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center ;
+  width: 90%;
+  height: 220rpx;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10rpx;
+  font-size: 35rpx;
+}
+.label{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 25rpx;
+  color: #b9b9b9;
+}
+.nav{
+  width: 90%;  
+  background: white;
+   margin: 0 auto;
+  font-size: 28rpx;
+}
+.nav view{
+  padding: 10rpx;
+}
