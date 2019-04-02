@@ -1,6 +1,9 @@
 {
   "pages": [
+    "pages/search/search",
+    "pages/recommend/recommend",
     "pages/user/user"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",

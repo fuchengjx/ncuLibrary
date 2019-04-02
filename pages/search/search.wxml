@@ -1,0 +1,8 @@
+<!--pages/search/search.wxml-->
+<!-- <text>pages/search/search.wxml</text> -->
+<view class='wrapper'>
+  <view class='header'>
+   <input placeholder="这是一个可以自动聚焦的input"/>
+   <button class='btn_cancel'>取消</button>
+  </view>
+</view>

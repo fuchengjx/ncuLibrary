@@ -1,0 +1,20 @@
+/* pages/search/search.wxss */
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px 10px 20px 0;
+}
+.header input{
+  /* display: inline-block; */
+  flex: 4;
+  margin-left:20px; 
+}
+.btn_cancel{
+  flex: 1;
+  /* display: inline-block; */
+  background: white;
+}
+.btn_cancel::after{
+  border: none;
+}
