@@ -27,10 +27,12 @@
 
 <view class='nav'>
   <view class='about'>
-    关于我们
+    <image class="nav_icon" src="https://cdn.nlark.com/yuque/0/2019/png/164272/1553916505193-9f8b27a1-8176-4d8f-ab03-4bbe16a03cb9.png"></image>
+    <text>关于我们</text>
   </view>
   <view class='share'>
-    分享
+    <image class="nav_icon" src="https://cdn.nlark.com/yuque/0/2019/png/164272/1553916505064-5378e4ea-aa1c-4d08-8a1a-8163f66bd6ba.png"></image>
+    <text>分享</text>
   </view>
 </view>
 
