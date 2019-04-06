@@ -42,8 +42,12 @@
   font-size: 25rpx;
   color: #b9b9b9;
 }
+.label_icon{
+  width: 35px;
+  height: 35px;
+}
 .nav{
-  width: 90%;  
+  width: 90%;
   background: white;
    margin: 0 auto;
   font-size: 28rpx;

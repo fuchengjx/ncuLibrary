@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/user/user",
     "pages/search/search",
-    "pages/recommend/recommend",
-    "pages/user/user"
+    "pages/recommend/recommend"
+
     
   ],
   "window": {

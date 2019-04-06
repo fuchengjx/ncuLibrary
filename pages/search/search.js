@@ -7,7 +7,10 @@ Page({
   data: {
 
   },
-
+  searchSubmit (e) {
+    console.info(12);
+    console.info('form发生了submit事件，携带数据为：', e.detail.value)
+  },
   /**
    * 生命周期函数--监听页面加载
    */

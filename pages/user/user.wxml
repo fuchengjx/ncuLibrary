@@ -11,11 +11,17 @@
     <text>黑白钢琴键上的徘徊</text>
       <view class='label'>
         <view class='collect'>
-      我的收藏
-     </view>
-     <view class='history'>
-      浏览历史
-      </view>
+          <image class="collect_icon label_icon" src="https://cdn.nlark.com/yuque/0/2019/png/164272/1553916505514-6b45c916-4b7e-4f34-b745-c17aa6f32976.png"></image>
+          <text>
+            我的收藏
+          </text>
+        </view>
+        <view class='history'>
+          <image class="history_icon label_icon" src="https://cdn.nlark.com/yuque/0/2019/png/164272/1553916505232-e42c1fd9-d405-4fa6-9251-87c254bd3532.png"></image>
+          <text>
+            浏览历史
+          </text>
+        </view>
     </view>
   </view>
 

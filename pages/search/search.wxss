@@ -5,15 +5,32 @@
   justify-content: space-around;
   padding: 20px 10px 20px 0;
 }
-.header input{
+.input_icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 12px;
+  left: 15px;
+}
+.header .input{
   /* display: inline-block; */
-  flex: 4;
-  margin-left:20px; 
+  position: relative;
+  flex: 8;
+  padding: 5px;
+  margin-top: 2px;
+  margin-left:20px;
+  border-radius: 50px;
+  background: #ededed;
+}
+.input input{
+  padding-left: 35px;
+  font-size: 25px;
 }
 .btn_cancel{
   flex: 1;
   /* display: inline-block; */
   background: white;
+  color: #9dbaf6;
 }
 .btn_cancel::after{
   border: none;
