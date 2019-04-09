@@ -1,6 +1,9 @@
 <!--index.wxml-->
 <view class="wrapper">
-  <view>
-    <text>I am index</text>
+  <view class="header">
+    <view class="input" bindtap="goSearch">
+      <image class="input_icon" src="https://cdn.nlark.com/yuque/0/2019/png/164272/1553916505030-172cc386-56d7-44a7-ac3d-6c9a96abdd6f.png"></image>
+      <input/>
+    </view>
   </view>
 </view>

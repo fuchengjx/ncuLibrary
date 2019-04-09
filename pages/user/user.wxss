@@ -20,6 +20,7 @@
   width: 128rpx;
   height: 128rpx;
   border-radius: 50%;
+  z-index: 10;
 }
 .content{
   position: relative;
@@ -31,7 +32,7 @@
   width: 90%;
   height: 350rpx;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 1);
   border-radius: 10rpx;
   font-size: 35rpx;
 }
@@ -46,7 +47,7 @@
 .label_icon{
   width: 35px;
   height: 35px;
-  margin-left: 10px;
+  margin-left: 5px;
   margin-bottom: 15px;
 }
 .nav{
@@ -54,6 +55,7 @@
   background: white;
   margin: 0 auto;
   font-size: 28rpx;
+  border-radius: 5px;
 }
 .nav_icon{
   margin-left: 30px;
@@ -68,4 +70,11 @@
 .nav view{
   height: 50px;
   line-height: 50px;
+}
+.go {
+  float: right;
+  width: 15px;
+  height: 25px;
+  margin-right: 25px;
+  margin-top: 10px;
 }

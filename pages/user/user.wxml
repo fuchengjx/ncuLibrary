@@ -1,9 +1,8 @@
 <!--pages/user/user.wxml-->
 <view class='body'>
-
   <view class='header'>
     <view class='userName'>
-      <image class='avatar' src="https://pic2.zhimg.com/v2-32335916bdf3684ed398f9f578eab87f_1200x500.jpg"></image>
+      <image class='avatar' src="{{userInfo.avatarUrl}}"></image>
     </view>
   </view>
 
@@ -29,10 +28,12 @@
   <view class='about'>
     <image class="nav_icon" src="https://cdn.nlark.com/yuque/0/2019/png/164272/1553916505193-9f8b27a1-8176-4d8f-ab03-4bbe16a03cb9.png"></image>
     <text>关于我们</text>
+    <image class="go" src="https://cdn.nlark.com/yuque/0/2019/png/164272/1554810644087-59cd7a02-2bb3-4716-aa86-b5353c15f817.png"></image>
   </view>
   <view class='share'>
     <image class="nav_icon" src="https://cdn.nlark.com/yuque/0/2019/png/164272/1553916505064-5378e4ea-aa1c-4d08-8a1a-8163f66bd6ba.png"></image>
     <text>分享</text>
+    <image class="go" src="https://cdn.nlark.com/yuque/0/2019/png/164272/1554810644087-59cd7a02-2bb3-4716-aa86-b5353c15f817.png"></image>
   </view>
 </view>
 
