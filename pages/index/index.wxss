@@ -27,3 +27,42 @@
   padding-left: 35px;
   font-size: 15px;
 }
+.popup_icon {
+    width: 25px;
+    height: 25px;
+}
+.content {
+  width: 92%;
+  margin: 0 auto;
+}
+.contentTitle tex{
+    height: 25px;
+    line-height: 25px;
+}
+.bookList {
+
+}
+.book {
+    height: 140px;
+    display: flex;
+    align-items: flex-start;
+    border-radius: 3px;
+    overflow: scroll;
+}
+.cover{
+    /*float: left;*/
+    position: fixed;
+    width: 100px;
+    height: 130px;
+    margin-right: 10px;
+}
+.bookInfo {
+    flex: 1;
+    color: gray;
+    font-size: 13px;
+    padding-left: 120px;
+}
+.bookName {
+    color: black;
+    font-size: 18px;
+}

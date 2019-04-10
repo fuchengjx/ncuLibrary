@@ -10,6 +10,7 @@ App({
       success: res => {
         this.globalData.userInfo = res.userInfo
         console.log(this.globalData)
+        // console.log(res)
       }
     })
   },
