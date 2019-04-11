@@ -3,7 +3,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 20px 10px 20px 0;
+  padding: 20px 0 20px 0;
+  width: 92%;
+  margin: 0 auto;
 }
 .input_icon {
   width: 20px;
@@ -18,7 +20,6 @@
   flex: 8;
   padding: 6px;
   margin-top: 2px;
-  margin-left:20px;
   border-radius: 50px;
   background: #ededed;
   color: red;
@@ -28,41 +29,55 @@
   font-size: 15px;
 }
 .popup_icon {
-    width: 25px;
-    height: 25px;
+  width: 25px;
+  height: 25px;
 }
 .content {
   width: 92%;
   margin: 0 auto;
 }
-.contentTitle tex{
-    height: 25px;
-    line-height: 25px;
+.contentTitle text {
+  height: 25px;
+  line-height: 25px;
+  padding-right: 30px;
+  background: url("http://ppqz7y0vq.bkt.clouddn.com/popup_icon.png") no-repeat right 50%;
+  background-size: 25px 25px;
 }
 .bookList {
-
+  margin-top: 10px;
 }
 .book {
-    height: 140px;
-    display: flex;
-    align-items: flex-start;
-    border-radius: 3px;
-    overflow: scroll;
+  height: 140px;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 3px;
+  overflow: scroll;
+  margin-bottom: 10px;
+  box-shadow: 0px 3px 14px #BfBfBf;
 }
 .cover{
     /*float: left;*/
-    position: fixed;
-    width: 100px;
-    height: 130px;
-    margin-right: 10px;
+  position: absolute;
+  width: 100px;
+  height: 130px;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 14px ;
 }
 .bookInfo {
-    flex: 1;
-    color: gray;
-    font-size: 13px;
-    padding-left: 120px;
+  flex: 1;
+  color: gray;
+  font-size: 13px;
+  padding-left: 120px;
+  padding-right: 10px;
 }
 .bookName {
-    color: black;
-    font-size: 18px;
+  color: black;
+  font-size: 16px;
+}
+.bookAuthor {
+  display: inline-block;
+  padding-bottom: 5px;
 }

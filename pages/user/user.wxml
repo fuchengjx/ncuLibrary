@@ -1,8 +1,9 @@
 <!--pages/user/user.wxml-->
 <view class='body'>
   <view class='header'>
-    <view class='userName'>
-      <image class='avatar' src="{{userInfo.avatarUrl}}"></image>
+    <view class='user'>
+      <open-data class='avatar' type="userAvatarUrl"></open-data>
+      <!--<image class='avatar' src="{{userInfo.avatarUrl}}"></image>-->
     </view>
   </view>
 

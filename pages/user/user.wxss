@@ -15,16 +15,20 @@
   justify-content: center;
   align-items: center ;
 }
-.avatar{
+.user{
+  overflow: hidden;
   position: relative;
   width: 128rpx;
   height: 128rpx;
   border-radius: 50%;
   z-index: 10;
 }
+.avatar{
+
+}
 .content{
   position: relative;
-  top: -100rpx;
+  top: -120rpx;
   display: flex;
   flex-direction: column;
   justify-content: center;

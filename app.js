@@ -1,8 +1,5 @@
 //app.js
 App({
-  globalData: {
-    userInfo: null
-  },
   onLaunch: function() {
     console.log("onLoad");
     wx.getUserInfo({
@@ -11,6 +8,9 @@ App({
         this.globalData.userInfo = res.userInfo
         console.log(this.globalData)
         // console.log(res)
+      },
+      fail: res => {
+        console.log("getUerInfo Error",res)
       }
     })
   },

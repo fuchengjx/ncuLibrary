@@ -12,7 +12,10 @@ Page({
       url: "/pages/search/search"
     })
   },
-  onLoad: function () {
+  popupCheck: function() {
+   console.log("popupCheck")
+  },
+  onLoad: function() {
     wx.login({
       success(res) {
         console.log(res.code)
