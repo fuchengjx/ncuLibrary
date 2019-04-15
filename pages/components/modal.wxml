@@ -1,0 +1,10 @@
+<!--pages/components/modal.wxml-->
+<view class="mask" wx:if='{{show}}' bindtap='clickMask'>
+  <view class="modal_content" style="height:{{height}}">
+    <slot ></slot>
+  </view>
+  <view class="modal_wrapper">
+    <!-- <view class="cancel_btn" style="color:rgba(7,17,27,0.6)" bindtap='cancel'>取消</view> -->
+    <view class="confirm_btn" style='color:#13b5f5' bindtap='confirm'>确定</view>
+  </view>
+</view>

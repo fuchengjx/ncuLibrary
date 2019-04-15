@@ -1,4 +1,8 @@
 {
+  "component": true,
+  "usingComponents": {
+    "modal" : "../components/modal"
+  },
   "navigationBarBackgroundColor": "#454dff",
   "navigationBarTextStyle": "white",
   "navigationBarTitleText": "南大图书",

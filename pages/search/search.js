@@ -5,11 +5,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+      inputTxt: ''
   },
   searchSubmit (e) {
-    console.info(12);
+    console.info(e);
     console.info('form发生了submit事件，携带数据为：', e.detail.value)
+  },
+  clearInput() {
+    this.setData ({
+       inputTxt:''
+    })
   },
   /**
    * 生命周期函数--监听页面加载

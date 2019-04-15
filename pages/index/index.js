@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-
+    // showModal: false
   },
   //事件处理函数
   goSearch: function() {
@@ -14,6 +14,11 @@ Page({
   },
   popupCheck: function() {
    console.log("popupCheck")
+   console.log(this.showModal)
+   this.setData({
+     showModal: true
+   })
+   console.log(this.showModal)
   },
   onLoad: function() {
     wx.login({
