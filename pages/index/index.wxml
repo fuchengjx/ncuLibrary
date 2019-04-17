@@ -8,7 +8,7 @@
   </view>
   <view class="content">
     <!-- 自定义弹窗 -->
-    <modal show="{{showModal}}" height='60%' bindcancel="modalCancel" bindconfirm='modalConfirm'>
+    <modal show="{{showModal}}" height='60%'  >
      <view>
        
      </view>

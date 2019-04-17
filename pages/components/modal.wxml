@@ -1,10 +1,18 @@
 <!--pages/components/modal.wxml-->
 <view class="mask" wx:if='{{show}}' bindtap='clickMask'>
-  <view class="modal_content" style="height:{{height}}">
-    <slot ></slot>
-  </view>
-  <view class="modal_wrapper">
-    <!-- <view class="cancel_btn" style="color:rgba(7,17,27,0.6)" bindtap='cancel'>取消</view> -->
-    <view class="confirm_btn" style='color:#13b5f5' bindtap='confirm'>确定</view>
+  <view class="modal_content" style="height:{{height}}" catch:tap="null">
+   <view class="header_title">
+    推送设置
+   </view>
+   <view class="radio" >
+    <radio-group>
+      <label wx:for="{{item}}"  wx:key="{{item.id}}">
+        <radio value="{{item.value}}" /> {{item.name}}
+      </label>
+    </radio-group>
+   </view>
+   <view class="modal_wrapper">
+    <view class="confirm_btn" style='color:#13b5f5' catchtap='confirm'>确定</view>
+   </view>
   </view>
 </view>

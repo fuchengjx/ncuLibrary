@@ -4,30 +4,39 @@
   left: 0;
   right: 0;
   top: 0;
-  bottom: 0;
+  bottom: -100px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(0,0,0,0.4);
-  z-index: 9999;
+  z-index: 999;
 }
 .modal_content {
+  position: relative;
+  bottom: 100rpx;
   display: flex;
   flex-direction: column;
   width: 80%;
   background: #fff;
   border-radius: 10rpx;
+  z-index: 10000;
+}
+.header_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: PingFangSC-Semibold, sans-serif;
+  font-size: 20px;
+  color: #707070;
 }
 .modal_wrapper {
-  position: absolute;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: flex-end;
   height: 100rpx;
   line-height: 100rpx;
-  border-top: 2rpx solid rgba(7,17,27,0.1);
 }
-.cancel_btn, .confirm_btn {
+.confirm_btn {
   /* flex: 1; */
   height: 100rpx;
   line-height: 100rpx;
