@@ -19,13 +19,13 @@ Component({
    * 组件的初始数据
    */
   data: {
-    item: [
-      { name: 'USA', value: '美国', checked:false},
-      { name: 'CHN', value: '美国', checked: true },
-      { name: 'BRA', value: '巴西', checked: false},
-      { name: 'JPN', value: '日本', checked: false},
-      { name: 'ENG', value: '英国', checked: false},
-      { name: 'FRA', value: '法国', checked: false},
+    items: [
+      { name: '1', value: '计算机科学', checked:false},
+      { name: '2', value: '哲学、宗教', checked: true },
+      { name: '3', value: '艺术与设计', checked: false},
+      { name: '4', value: '数理科学与化学', checked: false},
+      { name: '5', value: '英天文与地球科学', checked: false},
+      { name: '6', value: '医药、卫生', checked: false},
     ],
   },
 
@@ -41,6 +41,9 @@ Component({
       console.log("this is a confirm",e)
       this.setData({ show: false })
       this.triggerEvent('confirm')
+    },
+    checkboxChange(e) {
+      console.log('checkbox发生change事件，携带value值为：', e.detail.value)
     }
   }
 })

@@ -29,6 +29,25 @@
   font-size: 20px;
   color: #707070;
 }
+.options {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 20px auto;
+}
+.checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  height: 40px;
+  line-height: 40px;
+  font-family: PingFangSC-Semibold, sans-serif;
+  font-size: 14px;
+  color: #404142;
+}
+.checkbox checkbox {
+  margin-right: 35px;
+}
 .modal_wrapper {
   display: flex;
   justify-content: center;
