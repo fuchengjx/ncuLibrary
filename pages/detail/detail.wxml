@@ -1,2 +1,7 @@
 <!--pages/detail/detail.wxml-->
 <text>pages/detail/detail.wxml</text>
+<view wx:if="{{bookData}}">
+  <view class="books" wx:for="{{bookdata}}" wx:key="index">
+    <image class="cover" src="{{item.cover}}">
+  </view>
+</view>

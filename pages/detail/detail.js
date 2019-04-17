@@ -5,21 +5,37 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    id: null,
+    bookdata: null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(options)
+    this.setData({
+      id: options.id
+    })
+    console.log(this.data.id)
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    var id = this.data.id
+    var that = this
+    wx.request({
+      url: '',
+      data: {id: id},
+      success: function(res) {
+        console.log(res)
+        that.setData({
+          bookdata: res
+        })
+      }
+    })
   },
 
   /**

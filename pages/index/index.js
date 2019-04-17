@@ -6,7 +6,7 @@ Page({
   data: {
     // showModal: false
     books: [
-      {
+    {
       id: "11",
       cover: "https://img3.doubanio.com/view/subject/m/public/s1727290.jpg", 
       bookName: "追风筝的人11",
