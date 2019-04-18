@@ -1,7 +1,27 @@
 <!--pages/detail/detail.wxml-->
 <text>pages/detail/detail.wxml</text>
 <view wx:if="{{bookData}}">
-  <view class="books" wx:for="{{bookdata}}" wx:key="index">
-    <image class="cover" src="{{item.cover}}">
+  <view class="books" wx:for="{{bookdata}}" wx:key="index" id="{{item.id}}">
+    <image class="cover" src="{{item.cover}}"></image>
+    <view class="bookSidebar">
+      <text class="bookName">{{item.bookName}}</text>
+      <text class="bookStatus">{{item.bookStatus}}</text>
+      <text class="bookAuthor">{{item.bookAuthor}}</text>
+      <text class="bookIndex">{{item.bookIndex}}</text>
+      <text class="bookPublishers">{{item.bookPublishers}}</text>
+      <text class="bookCategory">{{item.bookCategory}}</text>
+    </view>
+    <view class="bookBrief">
+      <text class="BriefTitle">内容简介</text>
+      <text class="Brief">
+        {{item.bookBrief}}
+      </text>
+    </view>
+    <view class="bookCatelog">
+      <text class="catelogTitle">作品目录</text>
+      <text class="catelog">
+        {{item.bookCatelog}}
+      </text>
+    </view>
   </view>
 </view>
