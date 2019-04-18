@@ -3,18 +3,18 @@
   width: 84%;
   margin: 25px auto 0 auto;
   font-size: 13px;
-  color: gray;                      
+  color: #808080;                      
 }
 .cover {
   position: absolute;
   width: 92px;
-  height: 106px;
+  height: 125px;
   border-radius: 5px;
   box-shadow: 0 2px 14px;                      
 }
 .bookSidebar {
   padding-left: 110px;
-  
+  line-height: 20px;
 }
 .label {
   font-size: 13px;
@@ -23,8 +23,9 @@
 .bookName {
   display: inline-block;
   padding-right: 20px;
+  padding-bottom: 10px;
   font-size: 18px;
-  color: black;
+  color: #000000;
 }
 .bookStatus {
   color: white;
@@ -37,8 +38,8 @@
 .briefTitle {
   display: inline-block;
   margin-bottom: 10px;
-  font-size: 16px;
-  color: black;
+  font-size: 17px;
+  color: #000000;
 }
 .more {
   float: right;

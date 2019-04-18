@@ -3,7 +3,7 @@
   <view class="header">
     <view class="input" bindtap="goSearch">
       <image class="input_icon" src="https://cdn.nlark.com/yuque/0/2019/png/164272/1553916505030-172cc386-56d7-44a7-ac3d-6c9a96abdd6f.png"></image>
-      <input/>
+      <input placeholder="  想要看点什么？"/>
     </view>
   </view>
   <view class="content">
@@ -23,38 +23,8 @@
         <image class="cover" src="{{item.cover}}"></image>
         <view class="bookInfo">
           <text class="bookName">{{item.bookName}} \n</text>
-          <text class="bookAuthor">{{item.bookAuthor}}  \n</text>
-          <text class="bookBrief">{{item.bookBrief}}</text>
-        </view>
-      </view>
-      <view class="book" bindtap="getDetail">
-        <image class="cover" src="https://img3.doubanio.com/view/subject/m/public/s1727290.jpg"></image>
-        <view class="bookInfo">
-          <text class="bookName">追风筝的人 \n</text>
-          <text class="bookAuthor">[美] 卡勒德·胡赛尼  \n</text>
-          <text class="bookBrief">12岁的阿富汗富家少爷阿米尔与仆人哈桑情同手足。然而，在一场风筝比赛后，发生了一件悲惨不堪的事，阿米尔为自己的懦弱感到自责和痛苦，逼走了哈桑，不久，自己也跟随父亲逃往美国。
-            成年后的阿米尔始终无法原谅自己当年对哈桑的背叛。为了赎罪，阿米尔再度踏上暌违二十多年的故乡，希望能为不幸的好友尽最后一点心力，却发现一个惊天谎言，儿时的噩梦再度重演，阿米尔该如何抉择？
-            故事如此残忍而又美丽，作者以温暖细腻的笔法勾勒人性的本质与救赎，读来令人荡气回肠</text>
-        </view>
-      </view>
-      <view class="book">
-        <image class="cover" src="https://img3.doubanio.com/view/subject/m/public/s1727290.jpg"></image>
-        <view class="bookInfo">
-          <text class="bookName">追风筝的人 \n</text>
-          <text class="bookAuthor">[美] 卡勒德·胡赛尼  \n</text>
-          <text class="bookBrief">12岁的阿富汗富家少爷阿米尔与仆人哈桑情同手足。然而，在一场风筝比赛后，发生了一件悲惨不堪的事，阿米尔为自己的懦弱感到自责和痛苦，逼走了哈桑，不久，自己也跟随父亲逃往美国。
-            成年后的阿米尔始终无法原谅自己当年对哈桑的背叛。为了赎罪，阿米尔再度踏上暌违二十多年的故乡，希望能为不幸的好友尽最后一点心力，却发现一个惊天谎言，儿时的噩梦再度重演，阿米尔该如何抉择？
-            故事如此残忍而又美丽，作者以温暖细腻的笔法勾勒人性的本质与救赎，读来令人荡气回肠</text>
-        </view>
-      </view>
-      <view class="book">
-        <image class="cover" src="https://img3.doubanio.com/view/subject/m/public/s1727290.jpg"></image>
-        <view class="bookInfo">
-          <text class="bookName">追风筝的人 \n</text>
-          <text class="bookAuthor">[美] 卡勒德·胡赛尼  \n</text>
-          <text class="bookBrief">12岁的阿富汗富家少爷阿米尔与仆人哈桑情同手足。然而，在一场风筝比赛后，发生了一件悲惨不堪的事，阿米尔为自己的懦弱感到自责和痛苦，逼走了哈桑，不久，自己也跟随父亲逃往美国。
-            成年后的阿米尔始终无法原谅自己当年对哈桑的背叛。为了赎罪，阿米尔再度踏上暌违二十多年的故乡，希望能为不幸的好友尽最后一点心力，却发现一个惊天谎言，儿时的噩梦再度重演，阿米尔该如何抉择？
-            故事如此残忍而又美丽，作者以温暖细腻的笔法勾勒人性的本质与救赎，读来令人荡气回肠</text>
+          <text class="bookAuthor">{{item.bookAuthor}}</text>
+          <text class="bookBrief">\n{{item.bookBrief}}</text>
         </view>
       </view>
     </view>
