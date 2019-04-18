@@ -5,14 +5,9 @@
     推送设置
    </view>
    <view class="options" >
-    <!-- <radio-group>
-      <label wx:for="{{item}}"  wx:key="{{item.id}}">
-        <radio value="{{item.value}}" /> {{item.name}}
-      </label>
-    </radio-group> -->
     <checkbox-group class="checkbox_group" bindchange="checkboxChange">
       <label class="checkbox" wx:for="{{items}}" wx:key="{{item.id}}">
-      <checkbox value="{{item.name}}" checked="{{item.checked}}" />
+      <checkbox value="{{item.id}}" checked="{{item.checked}}" />
        {{item.value}}
       </label>
     </checkbox-group>

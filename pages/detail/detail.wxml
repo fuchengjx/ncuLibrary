@@ -1,27 +1,30 @@
 <!--pages/detail/detail.wxml-->
-<text>pages/detail/detail.wxml</text>
 <view wx:if="{{bookData}}">
-  <view class="books" wx:for="{{bookdata}}" wx:key="index" id="{{item.id}}">
+  <view class="books" wx:for="{{bookData}}" wx:key="index" id="{{item.id}}">
     <image class="cover" src="{{item.cover}}"></image>
     <view class="bookSidebar">
-      <text class="bookName">{{item.bookName}}</text>
-      <text class="bookStatus">{{item.bookStatus}}</text>
-      <text class="bookAuthor">{{item.bookAuthor}}</text>
-      <text class="bookIndex">{{item.bookIndex}}</text>
-      <text class="bookPublishers">{{item.bookPublishers}}</text>
-      <text class="bookCategory">{{item.bookCategory}}</text>
+      <text class="bookName">{{item.bookName}} \n</text>
+      <text class="bookStatus">\n{{item.bookStatus}} \n</text>
+      <text class="label">作者: </text>
+      <text class="bookAuthor">{{item.bookAuthor}} \n</text>
+      <text class="label">索书号：</text>
+      <text class="bookIndex">{{item.bookIndex}} \n</text>
+      <text class="label">出版: </text>
+      <text class="bookPublishers">{{item.bookPublishers}} \n</text>
+      <text class="label">类别：</text> 
+      <text class="bookCategory">{{item.bookCategory}} \n</text>
     </view>
     <view class="bookBrief">
-      <text class="BriefTitle">内容简介</text>
-      <text class="Brief">
+      <text class="briefTitle">内容简介</text> <text class="more">全部</text>
+      <text class="brief">
         {{item.bookBrief}}
       </text>
     </view>
-    <view class="bookCatelog">
+    <!-- <view class="bookCatelog">
       <text class="catelogTitle">作品目录</text>
       <text class="catelog">
         {{item.bookCatelog}}
       </text>
-    </view>
+    </view>        -->
   </view>
 </view>

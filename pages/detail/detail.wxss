@@ -1,1 +1,45 @@
 /* pages/detail/detail.wxss */
+.books {
+  width: 84%;
+  margin: 20px auto 0 auto;
+  font-size: 13px;
+  color: gray;                      
+}
+.cover {
+  position: absolute;
+  width: 92px;
+  height: 106px;
+  border-radius: 5px;
+  box-shadow: 0 2px 14px;                      
+}
+.bookSidebar {
+  padding-left: 110px;
+  
+}
+.label {
+  font-size: 13px;
+  color: black;
+}
+.bookName {
+  display: inline-block;
+  padding-right: 20px;
+  font-size: 18px;
+  color: black;
+}
+.bookStatus {
+  color: white;
+  text-align: center;
+  background: green;
+}
+.bookBrief {
+  margin-top: 20px;
+}
+.briefTitle {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: black;
+}
+.more {
+  float: right;
+}
