@@ -1,7 +1,7 @@
 /* pages/detail/detail.wxss */
 .books {
   width: 84%;
-  margin: 20px auto 0 auto;
+  margin: 25px auto 0 auto;
   font-size: 13px;
   color: gray;                      
 }
@@ -42,4 +42,14 @@
 }
 .more {
   float: right;
+}
+.show {
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  display: -webkit-box; 
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5; 
+}
+.hide {
+  display: -webkit-box; 
 }

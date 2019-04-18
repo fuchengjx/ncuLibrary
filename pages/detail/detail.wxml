@@ -15,8 +15,8 @@
       <text class="bookCategory">{{item.bookCategory}} \n</text>
     </view>
     <view class="bookBrief">
-      <text class="briefTitle">内容简介</text> <text class="more">全部</text>
-      <text class="brief">
+      <text class="briefTitle">内容简介</text> <text class="more" bindtap="changeFold">{{brandFold?"展开":"收起"}}</text>
+      <text class="brief" class="{{active==1?'show':'hide'}}">
         {{item.bookBrief}}
       </text>
     </view>
