@@ -3,7 +3,7 @@
   <view class="books" wx:for="{{bookData}}" wx:key="index" id="{{item.id}}">
     <image class="cover" src="{{item.cover}}"></image>
     <view class="bookSidebar">
-      <text class="bookName">{{item.bookName}} \n</text>
+      <text class="bookName {{choose==1?'nocollect':'collect'}}" bindtap="changeChoose">{{item.bookName}} \n</text>
       <text class="bookStatus">\n{{item.bookStatus}} \n</text>
       <text class="label">作者: </text>
       <text class="bookAuthor">{{item.bookAuthor}} \n</text>
@@ -20,6 +20,7 @@
         {{item.bookBrief}}
       </text>
     </view>
+    <!-- 后端暂时没有该数据 -->
     <!-- <view class="bookCatelog">
       <text class="catelogTitle">作品目录</text>
       <text class="catelog">
