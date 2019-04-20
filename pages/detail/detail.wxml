@@ -4,7 +4,7 @@
     <image class="cover" src="{{item.cover}}"></image>
     <view class="bookSidebar">
       <text class="bookName {{choose==1?'nocollect':'collect'}}" bindtap="changeChoose">{{item.bookName}} \n</text>
-      <text class="bookStatus">\n{{item.bookStatus}} \n</text>
+      <text class="bookStatus {{item.bookStatus==='可借'?'':'nBook'}}">\n {{item.bookStatus}} \n</text>
       <text class="label">作者: </text>
       <text class="bookAuthor">{{item.bookAuthor}} \n</text>
       <text class="label">索书号：</text>

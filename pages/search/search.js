@@ -5,7 +5,26 @@ Page({
    * 页面的初始数据
    */
   data: {
-      inputTxt: ''
+      inputTxt: '',
+      books: [{
+        bookName: "解忧杂货店",
+        bookStatus: "可借",
+        bookAuthor: "东野圭吾",
+        bookIndex: "jd02/10",
+        bookPublishers: " 南海出版公司",
+      },{
+        bookName: "解忧杂货店",
+        bookStatus: "不可借",
+        bookAuthor: "东野圭吾",
+        bookIndex: "jd02/10",
+        bookPublishers: " 南海出版公司",
+      },{
+        bookName: "解忧杂货店",
+        bookStatus: "可借",
+        bookAuthor: "东野圭吾",
+        bookIndex: "jd02/10",
+        bookPublishers: " 南海出版公司",
+      }]
   },
   searchSubmit (e) {
     console.info(e);

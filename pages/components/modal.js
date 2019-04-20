@@ -20,12 +20,12 @@ Component({
    */
   data: {
     items: [
-      { name: '1', value: '计算机科学', checked:false},
-      { name: '2', value: '哲学、宗教', checked: true },
-      { name: '3', value: '艺术与设计', checked: false},
-      { name: '4', value: '数理科学与化学', checked: false},
-      { name: '5', value: '英天文与地球科学', checked: false},
-      { name: '6', value: '医药、卫生', checked: false},
+      { id: '1', value: '计算机科学', checked:false},
+      { id: '2', value: '哲学、宗教', checked: true },
+      { id: '3', value: '艺术与设计', checked: false},
+      { id: '4', value: '数理科学与化学', checked: false},
+      { id: '5', value: '英天文与地球科学', checked: false},
+      { id: '6', value: '医药、卫生', checked: false},
     ],
   },
 

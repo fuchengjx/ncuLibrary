@@ -8,16 +8,18 @@
              <input  value="{{inputTxt}}" confirm-type="search"/>
              <image bindtap="clearInput"  class="clear_icon" src="https://cdn.nlark.com/yuque/0/2019/png/164272/1553916504974-032f57c5-8480-4ba4-87dd-dbd3bddeed1b.png" />
          </view>
-      <button class='btn_cancel'>取消</button>
      </view>
     </form>
     <view class="bookList">
-       <view class="book">
-         <image class="cover" src="https://img3.doubanio.com/view/subject/m/public/s1727290.jpg"></image>
-         <view class="bookInfo">
-           <text class="searchSource">图书搜索 \n</text>
-           <text class="bookName">追风筝的人</text>
-         </view>
+       <view class="book" wx:for="{{books}}" wx:key="index">
+          <text class="bookName">{{item.bookName}}</text>
+          <text class="bookStatus {{item.bookStatus==='可借'?'':'nBook'}}">{{item.bookStatus}}</text>
+          <text class="label">\n 作者: </text>
+          <text class="bookAuthor">{{item.bookAuthor}} \n</text>
+          <text class="label">索书号：</text>
+          <text class="bookIndex">{{item.bookIndex}} \n</text>
+          <text class="label">出版: </text>
+          <text class="bookPublishers">{{item.bookPublishers}} \n</text>
        </view>
     </view>
 </view>
