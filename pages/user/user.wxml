@@ -10,7 +10,7 @@
   <view class='content'>
     <text>黑白钢琴键上的徘徊</text>
       <view class='label'>
-        <view class='collect'>
+        <view class='collect' bindtap="goCollection">
           <image class="collect_icon label_icon" src="https://cdn.nlark.com/yuque/0/2019/png/164272/1553916505514-6b45c916-4b7e-4f34-b745-c17aa6f32976.png"></image>
           <text>
             我的收藏

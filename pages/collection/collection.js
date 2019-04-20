@@ -5,9 +5,20 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    books: [{
+      bookName: "解忧杂货店",
+      bookStatus: "可借",
+      bookAuthor: "东野圭吾",
+      bookIndex: "jd02/10",
+      bookPublishers: " 南海出版公司",
+    }]
   },
-
+  cancelCollection: function(e) {
+    console.log("cancelcollection",e)
+    // wx.request({
+    //   url: ''
+    // })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

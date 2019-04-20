@@ -12,6 +12,11 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
+  goCollection: function() {
+    wx.navigateTo({
+      url: "/pages/collection/collection"
+    })
+  },
   onLoad: function (options) {
     if(app.globalData.userInfo) {
       this.setData({
