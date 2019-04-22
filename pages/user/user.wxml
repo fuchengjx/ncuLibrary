@@ -11,13 +11,13 @@
     <text>黑白钢琴键上的徘徊</text>
       <view class='label'>
         <view class='collect' bindtap="goCollection">
-          <image class="collect_icon label_icon" src="https://cdn.nlark.com/yuque/0/2019/png/164272/1553916505514-6b45c916-4b7e-4f34-b745-c17aa6f32976.png"></image>
+          <image class="collect_icon label_icon" src="http://ppqz7y0vq.bkt.clouddn.com/collect_icon.png"></image>
           <text>
             我的收藏
           </text>
         </view>
         <view class='history'>
-          <image class="history_icon label_icon" src="https://cdn.nlark.com/yuque/0/2019/png/164272/1553916505232-e42c1fd9-d405-4fa6-9251-87c254bd3532.png"></image>
+          <image class="history_icon label_icon" src="http://ppqz7y0vq.bkt.clouddn.com/history_icon.png"></image>
           <text>
             浏览历史
           </text>
@@ -27,14 +27,14 @@
 
 <view class='nav'>
   <view class='about'>
-    <image class="nav_icon" src="https://cdn.nlark.com/yuque/0/2019/png/164272/1553916505193-9f8b27a1-8176-4d8f-ab03-4bbe16a03cb9.png"></image>
+    <image class="nav_icon" src="http://ppqz7y0vq.bkt.clouddn.com/about_icon.png"></image>
     <text>关于我们</text>
-    <image class="go" src="https://cdn.nlark.com/yuque/0/2019/png/164272/1554810644087-59cd7a02-2bb3-4716-aa86-b5353c15f817.png"></image>
+    <image class="go" src="http://ppqz7y0vq.bkt.clouddn.com/go_icon.png"></image>
   </view>
   <view class='share'>
-    <image class="nav_icon" src="https://cdn.nlark.com/yuque/0/2019/png/164272/1553916505064-5378e4ea-aa1c-4d08-8a1a-8163f66bd6ba.png"></image>
+    <image class="nav_icon" src="http://ppqz7y0vq.bkt.clouddn.com/share_icon.png"></image>
     <text>分享</text>
-    <image class="go" src="https://cdn.nlark.com/yuque/0/2019/png/164272/1554810644087-59cd7a02-2bb3-4716-aa86-b5353c15f817.png"></image>
+    <image class="go" src="http://ppqz7y0vq.bkt.clouddn.com/go_icon.png"></image>
   </view>
 </view>
 
