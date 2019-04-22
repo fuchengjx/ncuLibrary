@@ -26,7 +26,6 @@
   margin-bottom: 10px;
   font-size: 18px;
   color: #000000;
-  
 }
 .nocollect {
   background: url(http://ppqz7y0vq.bkt.clouddn.com/shoucang.png) no-repeat center right;
