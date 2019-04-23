@@ -11,6 +11,18 @@ Page({
       bookAuthor: "东野圭吾",
       bookIndex: "jd02/10",
       bookPublishers: " 南海出版公司",
+    },{
+      bookName: "解忧杂货店",
+      bookStatus: "可借",
+      bookAuthor: "东野圭吾",
+      bookIndex: "jd02/10",
+      bookPublishers: " 南海出版公司",
+    },{
+      bookName: "解忧杂货店",
+      bookStatus: "可借",
+      bookAuthor: "东野圭吾",
+      bookIndex: "jd02/10",
+      bookPublishers: " 南海出版公司",
     }]
   },
   cancelCollection: function(e) {
@@ -30,7 +42,9 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+    // wx.request({
 
+    // })
   },
 
   /**

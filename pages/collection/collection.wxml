@@ -1,5 +1,4 @@
 <!--pages/collection/collection.wxml-->
-<text>pages/collection/collection.wxml</text>
 <view >
   <view class="book" wx:for="{{books}}" wx:key="index">
     <text class="bookName">{{item.bookName}} \n</text>

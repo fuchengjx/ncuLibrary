@@ -1,17 +1,19 @@
 /* pages/collection/collection.wxss */
 .book {
   position: relative;
-  height: 80px;
-  padding: 15px 0;
+  width: 90%;
+  height: 40px;
+  padding: 18px 10px 18px 10px;
+  margin: 0 auto;
   font-size: 13px;
   color: #808080; 
-  border: 1px solid #808080;
+  border-bottom: 1px solid #808080;
 }
 .bookName {
   display: inline-block;
   padding-right: 20px;
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 16px;
   color: #000000;
 }
 .bookStatus {
@@ -25,7 +27,7 @@
 }
 .cancel_icon {
   position: absolute;
-  top: 12px;
+  top: 25px;
   right: 15px;
   width: 25px;
   height: 25px;
