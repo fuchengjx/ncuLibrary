@@ -43,12 +43,24 @@ Page({
    })
   },
   onLoad: function() {
-    wx.login({
-      success(res) {
-        console.log(res.code)
-      }
-    })
+    setTimeout(()=>{
+      console.log("openID", app.globalData.openID)
+      wx.request({
+        url: 'https://lib.exql.top/api/book/recommend',
+        header: {wx_open_id: app.globalData.openID},
+        success: (res) => {
+          console.log("getList", res.data.data)
+          this.setData({
+            books: res.data.data
+          })
+          console.log("Afterbook", this.data.books)
+        }
+      })
+    },1000)
+  },
 
+  onReady: function () {
+   
   }
 
 })
