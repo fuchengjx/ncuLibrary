@@ -7,8 +7,8 @@
    <view class="options" >
     <checkbox-group class="checkbox_group" bindchange="checkboxChange">
       <label class="checkbox" wx:for="{{items}}" wx:key="{{item.id}}">
-      <checkbox value="{{item.id}}" checked="{{item.checked}}" />
-       {{item.value}}
+      <checkbox value="{{item.subjectId}}" checked="{{defaultChecked}}" />
+       {{item.subjectName}}
       </label>
     </checkbox-group>
    </view>

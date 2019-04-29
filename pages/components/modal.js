@@ -20,13 +20,14 @@ Component({
    * 组件的初始数据
    */
   data: {
+    defaultChecked: false,
     items: [
-      { id: '1', value: '计算机科学', checked:false},
-      { id: '2', value: '哲学、宗教', checked: false},
-      { id: '3', value: '艺术与设计', checked: false},
-      { id: '4', value: '数理科学与化学', checked: false},
-      { id: '5', value: '英天文与地球科学', checked: false},
-      { id: '6', value: '医药、卫生', checked: false},
+      { subjectId: 1, subjectName: '计算机科学', checked:false},
+      { subjectId: 2, subjectName: '哲学、宗教', checked: false},
+      { subjectId: 3, subjectName: '艺术与设计', checked: false},
+      { subjectId: 4, subjectName: '数理科学与化学', checked: false},
+      { subjectId: 5, subjectName: '英天文与地球科学', checked: false},
+      { subjectId: 6, subjectName: '医药、卫生', checked: false},
     ],
     subjects: [],
   },
@@ -34,6 +35,18 @@ Component({
   /**
    * 组件的方法列表
    */
+  created: function () {
+    wx.request({
+      url: 'https://lib.exql.top/api/book/subject/setting',
+      header: {wx_open_id: app.globalData.openID},
+      success: (res) => {
+        this.setData({
+          items: res.data.data
+        })
+        console.log("setting: ",res.data.data)
+      }
+    })
+  },
   methods: {
     clickMask(e) {
       this.setData({show: false})
@@ -51,8 +64,13 @@ Component({
     },
     checkboxChange(e) {
       console.log('checkbox发生change事件，携带value值为：', e.detail.value)
+      let subjectsInt = []
+      for (let i = 0, len = e.detail.value.length; i < len; i++ ) {
+        console.log(e.detail.value[i])
+        subjectsInt.push(parseInt(e.detail.value[i]))
+      }
       this.setData({
-        subjects: e.detail.value.concat()
+        subjects: subjectsInt
       })
       console.log("subject", this.data.subjects)
     }

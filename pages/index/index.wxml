@@ -8,7 +8,7 @@
   </view>
   <view class="content">
     <!-- 自定义弹窗 -->
-    <modal show="{{showModal}}" height='60%'  bindconfirm='modalConfirm'>
+    <modal show="{{showModal}}" height='60%'>
      <view>
        
      </view>
@@ -19,12 +19,12 @@
       <!--<image class="popup_icon" src="http://ppqz7y0vq.bkt.clouddn.com/popup_icon.png"></image>-->
     </view>
     <view class="bookList">
-      <view class="book" wx:for="{{books}}" wx:key="index" id="{{item.id}}" bindtap="getDetail">
+      <view class="book" wx:for="{{books}}" wx:key="index" id="{{item.bookId}}" bindtap="getDetail">
         <image class="cover" src="{{item.cover}}"></image>
         <view class="bookInfo">
           <text class="bookName">{{item.bookName}} \n</text>
-          <text class="bookAuthor">{{item.bookAuthor}}</text>
-          <text class="bookBrief">\n{{item.bookBrief}}</text>
+          <text class="author">{{item.author}}</text>
+          <text class="summary">\n{{item.summary}}</text>
         </view>
       </view>
     </view>

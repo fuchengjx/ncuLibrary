@@ -80,7 +80,7 @@
   color: #000000;
   font-size: 15px;
 }
-.bookAuthor {
+.author {
   display: inline-block;
   padding-bottom: 5px;
   color: #474747;

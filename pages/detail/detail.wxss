@@ -40,7 +40,7 @@
   text-align: center;
   background: green;
 }
-.bookBrief {
+.summary {
   margin-top: 20px;
 }
 .briefTitle {

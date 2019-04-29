@@ -15,7 +15,7 @@
           <text class="bookName">{{item.bookName}}</text>
           <text class="bookStatus {{item.bookStatus==='可借'?'':'nBook'}}">{{item.bookStatus}}</text>
           <text class="label">\n 作者: </text>
-          <text class="bookAuthor">{{item.bookAuthor}} \n</text>
+          <text class="author">{{item.author}} \n</text>
           <text class="label">索书号：</text>
           <text class="bookIndex">{{item.bookIndex}} \n</text>
           <text class="label">出版: </text>
