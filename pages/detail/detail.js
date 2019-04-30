@@ -1,4 +1,5 @@
 // pages/detail/detail.js
+const app = getApp()
 Page({
 
   /**
@@ -21,13 +22,20 @@ Page({
       summary: "现代人内心流失的东西，这家杂货店能帮你找回——僻静的街道旁有一家杂货店，只要写下烦恼投进卷帘门的投信口，第二天就会在店后的牛奶箱里得到回答。因男友身患绝症，年轻女孩静子在爱情与梦想间徘徊；克郎为了音乐梦想离家漂泊，却在现实中寸步难行；少年浩介面临家庭巨变，挣扎在亲情与未来的迷茫中……他们将困惑写成信投进杂货店，随即奇妙的事情竟不断发生。生命中的一次偶然交会，将如何演绎出截然不同的人生？如今回顾写作过程，我发现自己始终在思考一个问题：站在人生的岔路口，人究竟应该怎么做？我希望读者能在掩卷时喃喃自语：我从未读过这样的小说。——东野圭吾",
     }]
   },
-  changeChoose() {
+  changeChoose(e) {
     this.setData({
       choose: !this.data.choose
     })
-    // wx.request({
-
-    // })
+    console.log("collect:id ", e.currentTarget.id)
+    wx.request({
+      url: 'https://lib.exql.top/api/book/collect',
+      header: {wx_open_id: app.globalData.openID},
+      method: 'POST',
+      data: {"bookId": e.currentTarget.id},
+      success: (res) => {
+        
+      }
+    })
   },
   changeFold() {
     this.setData({
@@ -45,8 +53,6 @@ Page({
     this.setData({
       id: options.id
     })
-    console.log(this.data.id)
-
   },
 
   /**
@@ -54,17 +60,17 @@ Page({
    */
   onReady: function () {
     var id = this.data.id
-    var that = this
-    // wx.request({
-    //   url: '',
-    //   data: {id: id},
-    //   success: function(res) {
-    //     console.log(res)
-    //     that.setData({
-    //       bookdata: res
-    //     })
-    //   }
-    // })
+    wx.request({
+      url: 'https://lib.exql.top/api/book/detail/'+ id,
+      success: res => {
+        let data = []
+        data.push(res.data.data)
+        console.log(data)
+        this.setData({
+          bookData: data
+        })
+      }
+    })
   },
 
   /**

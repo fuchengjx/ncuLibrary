@@ -4,7 +4,7 @@ App({
     console.log("onLoad");
     wx.login({
       success: res => {
-        this.globalData.openbookId = res.code
+        this.globalData.openID = res.code
         console.log("res.code ", res.code+"  openID: ",this.globalData.openID)
       }
     })

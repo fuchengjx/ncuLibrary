@@ -1,18 +1,18 @@
 <!--pages/detail/detail.wxml-->
-<view wx:if="{{bookData}}">
-  <view class="books" wx:for="{{bookData}}" wx:key="index" id="{{item.id}}">
+<view>
+  <view class="books" wx:for="{{bookData}}" wx:key="index" >
     <image class="cover" src="{{item.cover}}"></image>
     <view class="bookSidebar">
-      <text class="bookName {{choose==1?'nocollect':'collect'}}" bindtap="changeChoose">{{item.bookName}} \n</text>
+      <text class="bookName {{choose==1?'nocollect':'collect'}}" id="{{item.bookId}}" bindtap="changeChoose">{{item.bookName}} \n</text>
       <text class="bookStatus {{item.bookStatus==='可借'?'':'nBook'}}">\n {{item.bookStatus}} \n</text>
       <text class="label">作者: </text>
       <text class="author">{{item.author}} \n</text>
       <text class="label">索书号：</text>
-      <text class="bookIndex">{{item.bookIndex}} \n</text>
+      <text class="bookIndex">{{item.isbn}} \n</text>
       <text class="label">出版: </text>
-      <text class="bookPublishers">{{item.bookPublishers}} \n</text>
+      <text class="bookPublishers">{{item.press}} \n</text>
       <text class="label">类别：</text> 
-      <text class="bookCategory">{{item.bookCategory}} \n</text>
+      <text class="bookCategory">{{item.category}} \n</text>
     </view>
     <view class="summary">
       <text class="briefTitle">内容简介</text> <text class="more" bindtap="changeFold">{{brandFold?"展开":"收起"}}</text>

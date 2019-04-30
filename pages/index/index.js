@@ -23,7 +23,7 @@ Page({
     }]
   },
   //事件处理函数
-  goSearch: function() {
+  goSearch: function() {   
     wx.navigateTo({
       url: "/pages/search/search"
     })
@@ -43,7 +43,6 @@ Page({
    })
   },
   onLoad: function() {
-    setTimeout(()=>{
       console.log("openID", app.globalData.openID)
       wx.request({
         url: 'https://lib.exql.top/api/book/recommend',
@@ -54,7 +53,6 @@ Page({
           })
         }
       })
-    },1000)
   },
 
   onReady: function () {

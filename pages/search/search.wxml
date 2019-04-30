@@ -1,11 +1,11 @@
 <!--pages/search/search.wxml-->
 <!-- <text>pages/search/search.wxml</text> -->
 <view class='wrapper'>
-    <form action="" bindsubmit="searchSubmit">
+    <form action="">
      <view class='header'>
          <view class='search'>
              <!-- <image class="input_icon" src="https://cdn.nlark.com/yuque/0/2019/png/164272/1553916505030-172cc386-56d7-44a7-ac3d-6c9a96abdd6f.png"></image> -->
-             <input  value="{{inputTxt}}" confirm-type="search"/>
+             <input value="{{inputTxt}}" confirm-type="search" bindconfirm="searchSubmit"/>
              <image bindtap="clearInput"  class="clear_icon" src="http://ppqz7y0vq.bkt.clouddn.com/clear_icon.png" />
          </view>
      </view>

@@ -1,4 +1,5 @@
 // pages/search/search.js
+const app = getApp()
 Page({
 
   /**
@@ -29,6 +30,18 @@ Page({
   searchSubmit (e) {
     console.info(e);
     console.info('form发生了submit事件，携带数据为：', e.detail.value)
+    wx.request({
+      url: 'https://lib.exql.top/api/book/query',
+      header: {wx_open_id: app.globalData.openID},
+      methods: 'POST',
+      data: {"key": e.detail.value},
+      success: (res) => {
+        this.setData({
+          books: res.data.data
+        })
+        console.log("serchSubmit: ", res.data.data)
+      }
+    })
   },
   clearInput() {
     this.setData ({

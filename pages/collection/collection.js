@@ -1,50 +1,70 @@
 // pages/collection/collection.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    books: [{
-      bookName: "解忧杂货店",
-      bookStatus: "可借",
-      author: "东野圭吾",
-      bookIndex: "jd02/10",
-      bookPublishers: " 南海出版公司",
-    },{
-      bookName: "解忧杂货店",
-      bookStatus: "可借",
-      author: "东野圭吾",
-      bookIndex: "jd02/10",
-      bookPublishers: " 南海出版公司",
-    },{
-      bookName: "解忧杂货店",
-      bookStatus: "可借",
-      author: "东野圭吾",
-      bookIndex: "jd02/10",
-      bookPublishers: " 南海出版公司",
-    }]
+    // books: [{
+    //   bookName: "解忧杂货店",
+    //   bookStatus: "可借",
+    //   author: "东野圭吾",
+    //   bookIndex: "jd02/10",
+    //   bookPublishers: " 南海出版公司",
+    // },{
+    //   bookName: "解忧杂货店",
+    //   bookStatus: "可借",
+    //   author: "东野圭吾",
+    //   bookIndex: "jd02/10",
+    //   bookPublishers: " 南海出版公司",
+    // },{
+    //   bookName: "解忧杂货店",
+    //   bookStatus: "可借",
+    //   author: "东野圭吾",
+    //   bookIndex: "jd02/10",
+    //   bookPublishers: " 南海出版公司",
+    // }]
+    books:[]
   },
   cancelCollection: function(e) {
     console.log("cancelcollection",e)
-    // wx.request({
-    //   url: ''
-    // })
+    wx.request({
+      url: 'https://lib.exql.top/api/book/collect',
+      header: {wx_open_id: app.globalData.openID},
+      method: 'DELETE',
+      data: {"bookId": parseInt(e.currentTarget.id)},
+      success: (res) => {
+        if (res.data.status) {
+          this.getCollectList();
+        }
+      }
+    })
+  },
+  getCollectList: function(res) {
+    wx.request({
+      url: 'https://lib.exql.top/api/book/collect',
+      header: {wx_open_id: app.globalData.openID},
+      success: (res) => {
+        this.setData({
+          books: res.data.data
+        })
+        console.log("getCollect", this.data.books)
+      }
+    })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getCollectList();
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    // wx.request({
-
-    // })
+    
   },
 
   /**

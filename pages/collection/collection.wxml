@@ -1,8 +1,13 @@
 <!--pages/collection/collection.wxml-->
-<view >
-  <view class="book" wx:for="{{books}}" wx:key="index">
-    <text class="bookName">{{item.bookName}} \n</text>
-    <text class="bookStatus {{item.bookStatus==='可借'?'':'nBook'}}">\n{{item.bookStatus}}</text>
-    <image bindtap="cancelCollection"  class="cancel_icon" src="http://ppqz7y0vq.bkt.clouddn.com/clear_icon.png" />
+<view>
+  <view wx:if="{{books.length>0}}">
+   <view class="book" wx:for="{{books}}" wx:key="index">
+      <text class="bookName">{{item.bookName}} \n</text>
+      <text class="bookStatus {{item.bookStatus==='可借'?'':'nBook'}}">\n{{item.bookStatus}}</text>
+      <image bindtap="cancelCollection" id="{{item.bookId}}"  class="cancel_icon" src="http://ppqz7y0vq.bkt.clouddn.com/clear_icon.png" />
+    </view>
   </view>
+   <view wx:else>
+    <text >你还没有收藏图书，快来收藏一些吧</text>
+   </view>
 </view>
