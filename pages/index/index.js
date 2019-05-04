@@ -40,28 +40,43 @@ Page({
      showModal: true
    })
   },
+  getBookList: function() {
+    wx.request({
+      url: 'https://lib.exql.top/api/book/recommend',
+      header: {wx_open_id: app.globalData.openID},
+      success: (res) => {
+        this.setData({
+          books: res.data.data
+        })
+      },
+      fail: (res) => {
+        console.log('书籍获取失败',res)
+        wx.showToast({
+          title: '获取推荐失败',
+          duration: 1000
+        })
+      }
+    })
+  },
   onLoad: function() {
       console.log("openID", app.globalData.openID)
-      wx.request({
-        url: 'https://lib.exql.top/api/book/recommend',
-        header: {wx_open_id: app.globalData.openID},
-        success: (res) => {
-          this.setData({
-            books: res.data.data
-          })
-        },
-        fail: (res) => {
-          console.log('书籍获取失败',res)
-          wx.showToast({
-            title: '获取推荐失败',
-            duration: 1000
-          })
-        }
-      })
+      this.getBookList()
   },
 
   onReady: function () {
    
-  }
-
+  },
+  onPullDownRefresh:function()
+  {
+    wx.showNavigationBarLoading() //在标题栏中显示加载
+    console.log('刷新')
+    //模拟加载
+    setTimeout(() =>
+    {
+      // complete
+      this.getBookList()
+      wx.hideNavigationBarLoading() //完成停止加载
+      wx.stopPullDownRefresh() //停止下拉刷新
+    },1500);
+  },
 })

@@ -3,6 +3,7 @@
   "usingComponents": {
     "modal" : "../components/modal"
   },
+  "enablePullDownRefresh": true,
   "navigationBarBackgroundColor": "#454dff",
   "navigationBarTextStyle": "white",
   "navigationBarTitleText": "南大图书",

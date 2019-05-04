@@ -13,18 +13,6 @@ Page({
         author: "东野圭吾",
         bookIndex: "jd02/10",
         bookPublishers: " 南海出版公司",
-      },{
-        bookName: "解忧杂货店",
-        bookStatus: "不可借",
-        author: "东野圭吾",
-        bookIndex: "jd02/10",
-        bookPublishers: " 南海出版公司",
-      },{
-        bookName: "解忧杂货店",
-        bookStatus: "可借",
-        author: "东野圭吾",
-        bookIndex: "jd02/10",
-        bookPublishers: " 南海出版公司",
       }]
   },
   searchSubmit (e) {
@@ -39,7 +27,17 @@ Page({
         this.setData({
           books: res.data.data
         })
+        wx.showToast({
+          title: '获取成功',
+          duration: 1000
+        })
         console.log("serchSubmit: ", res.data.data)
+      },
+      fail: (res) => {
+        wx.showToast({
+          title: '获取失败',
+          duration: 1000
+        })
       }
     })
   },
