@@ -27,15 +27,36 @@ Page({
       choose: !this.data.choose
     })
     console.log("collect:id ", e.currentTarget.id)
-    wx.request({
-      url: 'https://lib.exql.top/api/book/collect',
-      header: {wx_open_id: app.globalData.openID},
-      method: 'POST',
-      data: {"bookId": e.currentTarget.id},
-      success: (res) => {
-        
-      }
-    })
+    if (!this.data.choose) {
+      wx.request({
+        url: 'https://lib.exql.top/api/book/collect',
+        header: {wx_open_id: app.globalData.openID},
+        method: 'POST',
+        data: {"bookId": e.currentTarget.id},
+        success: (res) => {
+          wx.showToast({
+            title: '收藏成功',
+            duration: 1000
+          })
+        }
+      })
+    } else {
+      wx.request({
+        url: 'https://lib.exql.top/api/book/collect',
+        header: {wx_open_id: app.globalData.openID},
+        method: 'DELETE',
+        data: {"bookId": parseInt(e.currentTarget.id)},
+        success: (res) => {
+          if (res.data.status) {
+            wx.showToast({
+              title: '取消收藏',
+              duration: 2000
+            })
+          }
+        }
+      })
+    }
+
   },
   changeFold() {
     this.setData({

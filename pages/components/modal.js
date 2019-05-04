@@ -59,7 +59,20 @@ Component({
         url: 'https://lib.exql.top/api/book/subject/info',
         header: {wx_open_id: app.globalData.openID},
         method: 'PUT',
-        data: {"subjects": this.data.subjects}
+        data: {"subjects": this.data.subjects},
+        success: (res) => {
+          wx.showToast({
+            title: '设置成功',
+            icon: 'success',
+            duration: 1000
+          })
+        },
+        fail: (res) => {
+          wx.showToast({
+            title: '设置失败',
+            duration: 1000
+          })
+        } 
       })
     },
     checkboxChange(e) {

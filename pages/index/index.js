@@ -29,8 +29,6 @@ Page({
     })
   },
   getDetail: function(e) {
-    console.log(e.currentTarget)
-    console.log(e.currentTarget.dataset)
     var id = e.currentTarget.id
     wx.navigateTo({
       url: '../detail/detail?id=' + id
@@ -50,6 +48,13 @@ Page({
         success: (res) => {
           this.setData({
             books: res.data.data
+          })
+        },
+        fail: (res) => {
+          console.log('书籍获取失败',res)
+          wx.showToast({
+            title: '获取推荐失败',
+            duration: 1000
           })
         }
       })

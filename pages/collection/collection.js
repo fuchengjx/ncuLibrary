@@ -37,6 +37,10 @@ Page({
       success: (res) => {
         if (res.data.status) {
           this.getCollectList();
+          wx.showToast({
+            title: '取消收藏',
+            duration: 2000
+          })
         }
       }
     })

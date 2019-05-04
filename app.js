@@ -22,6 +22,6 @@ App({
   },
   globalData: {
     userInfo: null,
-    openID: 'none openID'
+    openID: '023CzpXV0HnqU22kaiYV0qNZWV0CzpXe'
   }
 })
