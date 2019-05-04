@@ -1,5 +1,6 @@
 {
   "usingComponents": {},
+  "enablePullDownRefresh": true,
   "navigationBarBackgroundColor": "#454dff",
   "navigationBarTextStyle": "white",
   "navigationBarTitleText": "我的收藏",

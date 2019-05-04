@@ -53,15 +53,21 @@ Page({
         this.setData({
           books: res.data.data
         })
+        wx.showToast({
+          title: '获取成功',
+          duration: 1000
+        })
         console.log("getCollect", this.data.books)
       }
     })
   },
+  
+ 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.getCollectList();
+    this.getCollectList()
   },
 
   /**
@@ -111,5 +117,17 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  onPullDownRefresh:function()
+  {
+    wx.showNavigationBarLoading() //在标题栏中显示加载
+    //模拟加载
+    setTimeout(() =>
+    {
+      // complete
+      this.getCollectList()
+      wx.hideNavigationBarLoading() //完成停止加载
+      wx.stopPullDownRefresh() //停止下拉刷新
+    },1500);
+  },
 })

@@ -31,11 +31,11 @@
     <text>关于我们</text>
     <image class="go" src="http://img.lib.exql.top/go_icon.png"></image>
   </view>
-  <view class='share'>
+  <button class='share'  open-type="share">
     <image class="nav_icon" src="http://img.lib.exql.top/share_icon.png"></image>
     <text>分享</text>
     <image class="go" src="http://img.lib.exql.top/go_icon.png"></image>
-  </view>
+  </button>
 </view>
 
 </view>

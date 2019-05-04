@@ -12,6 +12,20 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
+  onShareAppMessage: function() {
+    console.log("share")
+    return {
+      title: '转发',
+      path: '/pages/index/index',
+      success: function(res) {
+        wx.showToast({
+          title: '转发成功',
+          duration: 1000
+        })
+      }
+
+    }
+  },
   goCollection: function() {
     wx.navigateTo({
       url: "/pages/collection/collection"
