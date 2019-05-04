@@ -64,11 +64,12 @@ Component({
     },
     checkboxChange(e) {
       console.log('checkbox发生change事件，携带value值为：', e.detail.value)
-      let subjectsInt = []
-      for (let i = 0, len = e.detail.value.length; i < len; i++ ) {
-        console.log(e.detail.value[i])
-        subjectsInt.push(parseInt(e.detail.value[i]))
-      }
+      // let subjectsInt = []
+      // for (let i = 0, len = e.detail.value.length; i < len; i++ ) {
+      //   console.log(e.detail.value[i])
+      //   subjectsInt.push(parseInt(e.detail.value[i]))
+      // }
+      let subjectsInt = e.detail.value.map( x => parseInt(x))
       this.setData({
         subjects: subjectsInt
       })

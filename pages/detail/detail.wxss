@@ -3,14 +3,14 @@
   width: 84%;
   margin: 25px auto 0 auto;
   font-size: 13px;
-  color: #808080;                      
+  color: #808080;
 }
 .cover {
   position: absolute;
   width: 92px;
   height: 125px;
   border-radius: 5px;
-  box-shadow: 0 2px 14px;                      
+  box-shadow: 0 2px 14px;
 }
 .bookSidebar {
   padding-left: 110px;
@@ -28,11 +28,11 @@
   color: #000000;
 }
 .nocollect {
-  background: url(http://ppqz7y0vq.bkt.clouddn.com/shoucang.png) no-repeat center right;
+  background: url(http://img.lib.exql.top/shoucang.png) no-repeat center right;
   background-size: 15px 15px;
 }
 .collect {
-  background: url(http://ppqz7y0vq.bkt.clouddn.com/shoucangSoild.png) no-repeat center right;
+  background: url(http://img.lib.exql.top/shoucangSoild.png) no-repeat center right;
   background-size: 15px 15px;
 }
 .bookStatus {
@@ -53,12 +53,12 @@
   float: right;
 }
 .show {
-  overflow: hidden; 
+  overflow: hidden;
   text-overflow: ellipsis;
-  display: -webkit-box; 
+  display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 5; 
+  -webkit-line-clamp: 5;
 }
 .hide {
-  display: -webkit-box; 
+  display: -webkit-box;
 }

@@ -11,13 +11,13 @@
     <text>黑白钢琴键上的徘徊</text>
       <view class='label'>
         <view class='collect' bindtap="goCollection">
-          <image class="collect_icon label_icon" src="http://ppqz7y0vq.bkt.clouddn.com/collect_icon.png"></image>
+          <image class="collect_icon label_icon" src="http://img.lib.exql.top/collect_icon.png"></image>
           <text>
             我的收藏
           </text>
         </view>
         <view class='history'>
-          <image class="history_icon label_icon" src="http://ppqz7y0vq.bkt.clouddn.com/history_icon.png"></image>
+          <image class="history_icon label_icon" src="http://img.lib.exql.top/history_icon.png"></image>
           <text>
             浏览历史
           </text>
@@ -27,14 +27,14 @@
 
 <view class='nav'>
   <view class='about'>
-    <image class="nav_icon" src="http://ppqz7y0vq.bkt.clouddn.com/about_icon.png"></image>
+    <image class="nav_icon" src="http://img.lib.exql.top/about_icon.png"></image>
     <text>关于我们</text>
-    <image class="go" src="http://ppqz7y0vq.bkt.clouddn.com/go_icon.png"></image>
+    <image class="go" src="http://img.lib.exql.top/go_icon.png"></image>
   </view>
   <view class='share'>
-    <image class="nav_icon" src="http://ppqz7y0vq.bkt.clouddn.com/share_icon.png"></image>
+    <image class="nav_icon" src="http://img.lib.exql.top/share_icon.png"></image>
     <text>分享</text>
-    <image class="go" src="http://ppqz7y0vq.bkt.clouddn.com/go_icon.png"></image>
+    <image class="go" src="http://img.lib.exql.top/go_icon.png"></image>
   </view>
 </view>
 

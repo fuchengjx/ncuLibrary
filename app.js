@@ -5,7 +5,7 @@ App({
     wx.login({
       success: res => {
         this.globalData.openID = res.code
-        console.log("res.code ", res.code+"  openID: ",this.globalData.openID)
+        console.log("res.code ", res.code +"  openID: ",this.globalData.openID)
       }
     })
     // wx.getUserInfo({

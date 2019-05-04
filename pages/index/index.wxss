@@ -39,7 +39,7 @@
   height: 25px;
   line-height: 25px;
   padding-right: 30px;
-  background: url("http://ppqz7y0vq.bkt.clouddn.com/popup_icon.png") no-repeat right 50%;
+  background: url("http://img.lib.exql.top/popup_icon.png") no-repeat right 50%;
   background-size: 25px 25px;
 }
 .bookList {
@@ -70,11 +70,11 @@
   padding-left: 120px;
   padding-right: 10px;
   margin-top: 2px;
-  overflow: hidden; 
+  overflow: hidden;
   text-overflow: ellipsis;
-  display: -webkit-box; 
+  display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 6; 
+  -webkit-line-clamp: 6;
 }
 .bookName {
   color: #000000;

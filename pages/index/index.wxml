@@ -10,13 +10,13 @@
     <!-- 自定义弹窗 -->
     <modal show="{{showModal}}" height='60%'>
      <view>
-       
+
      </view>
    </modal>
 
     <view class="contentTitle" bindtap="popupCheck">
       <text>新书推荐</text>
-      <!--<image class="popup_icon" src="http://ppqz7y0vq.bkt.clouddn.com/popup_icon.png"></image>-->
+      <!--<image class="popup_icon" src="http://img.lib.exql.top/popup_icon.png"></image>-->
     </view>
     <view class="bookList">
       <view class="book" wx:for="{{books}}" wx:key="index" id="{{item.bookId}}" bindtap="getDetail">

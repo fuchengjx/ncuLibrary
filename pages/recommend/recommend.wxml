@@ -6,7 +6,7 @@
   </view>
   <view class='content'>
     <view class='bg'>
-      <image class='bgImg' src='http://ppqz7y0vq.bkt.clouddn.com/recommendBg.png'></image>
+      <image class='bgImg' src='http://img.lib.exql.top/recommendBg.png'></image>
       <text>点击右上角推荐想看的书</text>
     </view>
   </view>
